@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🖥️ Systèmes d'exploitation | GameX Install</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="images/logo2.png" alt="GameX Install Logo">
+    </a>
+  </div>
+
+  <div class="burger" id="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  <nav class="nav-mobile" id="nav-mobile">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">A Propos</a></li>
+      <li><a href="jeux.html">Jeux</a></li>
+      <li><a href="logiciels.html">Logiciels</a></li>
+      <li><a href="systemes.html">Systèmes</a></li>
+      <li class="submenu-mobile">
+        <a href="#" class="support-toggle">Support ▾</a>
+        <ul class="sub-menu-mobile">
+          <li><a href="faq.html">Aide & FAQ</a></li>
+          <li><a href="retour.html">Politique de retour</a></li>
+          <li><a href="confidentialite.html">Confidentialité</a></li>
+          <li><a href="cgv.html">Conditions générales</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+  <div class="overlay" id="overlay" onclick="closeDrawer()"></div>
+
+  <div class="header">
+    <h1>🖥️ Systèmes d'exploitation GameX Install 🖥️</h1>
+  </div>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Rechercher un systeme d'exploitation...">
+  </div>
+
+  <div class="products">
+<div class="software-card" data-name="Windows 10 Pro" data-price="5000">
+  <img src="images/systemes/Windows10.jpg" alt="Windows 10 Pro">
+  <h3>Windows 10 Pro</h3>
+  <p>Version complète, activée – 64 bits</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>
+      Windows 10 Pro est une version stable et optimisée du système d’exploitation de Microsoft, adaptée au travail et au gaming, avec toutes les mises à jour de sécurité.
+    </p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Windows 10 Pro')">Commander</button>
+</div>
+
+<div class="software-card" data-name="Windows 11 Pro" data-price="5000">
+  <img src="images/systemes/Windows11.jpg" alt="Windows 11 Pro">
+  <h3>Windows 11 Pro</h3>
+  <p>Compatible UEFI – Installation rapide</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>
+      Windows 11 Pro apporte une nouvelle interface moderne, plus de fluidité et une meilleure compatibilité avec les logiciels récents.
+    </p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Windows 11 Pro')">Commander</button>
+</div>
+
+<div class="software-card" data-name="Ubuntu 22.04 LTS" data-price="3500">
+  <img src="images/systemes/Ubuntu.jpg" alt="Ubuntu 22.04">
+  <h3>Ubuntu 22.04 LTS</h3>
+  <p>Système libre et rapide pour développeurs</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>
+      Ubuntu 22.04 LTS est un système Linux gratuit, stable et sécurisé, idéal pour les développeurs et les utilisateurs en quête de performance.
+    </p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Ubuntu 22.04 LTS')">Commander</button>
+</div>
+
+<div class="software-card" data-name="Kali Linux 2024" data-price="7000">
+  <img src="images/systemes/kalilinux.jpg" alt="Kali Linux">
+  <h3>Kali Linux 2024</h3>
+  <p>Idéal pour le pentesting et la cybersécurité</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>
+      Kali Linux 2024 est une distribution spécialisée dans la cybersécurité et le pentesting, avec de nombreux outils intégrés pour les tests réseau et systèmes.
+    </p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Kali Linux 2024')">Commander</button>
+</div>
+  </div>
+
+  <div id="retour">
+    <a href="index.html">⬅ Retour à l’accueil</a>
+  </div>
+
+  <!-- Panier -->
+  <div id="cartIcon" onclick="openDrawer()">
+    🛒 <span id="cartCount">0</span>
+  </div>
+
+  <div id="cartDrawer">
+    <div class="drawer-header">
+      <span>Votre Panier</span>
+      <button onclick="closeDrawer()">✖</button>
+    </div>
+    <div class="drawer-items" id="drawerItems"></div>
+    <p><strong>Sous-total :</strong> <span id="subtotal">0 FCFA</span></p>
+    <a class="commande" href="commande.html" style="background:#0ff;padding:10px 15px;display:inline-block;border-radius:5px;">Passer la commande</a>
+  </div>
+  
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <h3>GAMEX INSTALL</h3>
+        <p>Votre boutique en ligne pour jeux, logiciels et OS à prix réduit.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="jeux.html">Jeux</a></li>
+          <li><a href="logiciels.html">Logiciels</a></li>
+          <li><a href="offres.html">Offres</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="aide-faq.html">Aide & FAQ</a></li>
+          <li><a href="retour.html">Politique de retour</a></li>
+          <li><a href="cgv.html">Conditions générales</a></li>
+          <li><a href="confodentialite.html">Confidentialité</a></li>
+        </ul>
+      </div>
+      <div>
+        <button id="offresBtn">Offres en Promotion</button><br /><br />
+        <div class="socials">
+          <a href="https://www.tiktok.com/@user3199284392790?_r=1&_t=ZM-91HwTEuw7GC"><img src="../images/tikok.png" height="40px",width="40px" alt="Tiktok"></a>
+          <a href="#"><img src="../images/instagram.jpeg" height="40px",width="40px" alt="Instagram"></a>
+          <a href="#"><img src="../images/facebook.png" height="40px",width="40px" alt="Facebook"></a>
+          <a href="https://chat.whatsapp.com/IAi6jELFriK0neaBFJo34z?mode=ems_copy_h_t"><img src="../images/whatsapp.png" height="40px",width="40px" alt="whatsapp"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 GAMEX INSTALL - Tous droits réservés | Développé par <a href="#">COURLY DEVS</a></p>
+    </div>
+  </footer>
+
+  <script src="panier.js" ></script>
+</body>
+</html>

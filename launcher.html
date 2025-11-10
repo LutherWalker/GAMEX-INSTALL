@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>GameX Install Launcher</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    body {
+        margin: 0;
+        font-family: 'Orbitron', sans-serif;
+        background: linear-gradient(135deg, #007BFF, #6F42C1);
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 0.2em;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    p {
+        font-size: 1.2em;
+        margin-bottom: 2em;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    }
+
+    .progress-container {
+        width: 70%;
+        height: 25px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 2em;
+    }
+
+    .progress-bar {
+        height: 100%;
+        width: 0%;
+        background: #FFFFFF;
+        border-radius: 15px;
+        transition: width 0.3s ease;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 1em;
+        font-weight: bold;
+        color: #FFFFFF;
+        background: linear-gradient(45deg, #007BFF, #6F42C1);
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    }
+</style>
+</head>
+<body>
+    <h1>GameX Install</h1>
+    <p>Préparation et lancement du jeu en cours...</p>
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    <button class="btn" id="launchBtn">Lancer le jeu</button>
+
+<script>
+    const progressBar = document.getElementById('progress-bar');
+    const launchBtn = document.getElementById('launchBtn');
+
+    launchBtn.addEventListener('click', () => {
+        let width = 0;
+        const interval = setInterval(() => {
+            if(width >= 100) {
+                clearInterval(interval);
+                alert('Le jeu est maintenant lancé !');
+                // Ici tu peux appeler la fonction Electron pour lancer le jeu
+            } else {
+                width += 5;
+                progressBar.style.width = width + '%';
+            }
+        }, 100);
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GameX Install - Logiciels</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="images/logo2.png" alt="GameX Install Logo">
+    </a>
+  </div>
+  <div class="burger" id="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  <nav class="nav-mobile" id="nav-mobile">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">A Propos</a></li>
+      <li><a href="jeux.html">Jeux</a></li>
+      <li><a href="logiciels.html">Logiciels</a></li>
+      <li><a href="systemes.html">Systèmes</a></li>
+      <li class="submenu-mobile">
+        <a href="#" class="support-toggle">Support ▾</a>
+        <ul class="sub-menu-mobile">
+          <li><a href="faq.html">Aide & FAQ</a></li>
+          <li><a href="retour.html">Politique de retour</a></li>
+          <li><a href="confidentialite.html">Confidentialité</a></li>
+          <li><a href="cgv.html">Conditions générales</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+  <div class="overlay" id="overlay" onclick="closeDrawer()"></div>
+
+  <div class="header">
+    <h1>🧠 Logiciels GameX Install</h1>
+  </div>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Rechercher un logiciel...">
+  </div>
+
+<div class="products">
+<div class="software-card" data-name="Zebra CardStudio Pro" data-price="10000">
+  <img src="images/logiciels/zebra.jpg" alt="Zebra CardStudio">
+  <h3>Zebra CardStudio Pro</h3>
+  <p>Création cartes pro</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>
+      Logiciel complet pour concevoir, personnaliser et imprimer des cartes professionnelles (badges, cartes PVC, identités).
+    </p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Zebra CardStudio Pro')">Commander</button>
+</div>
+
+<div class="software-card" data-name="3Utools" data-price="7000">
+  <img src="images/logiciels/3utools.jpg" alt="3Utools">
+  <h3>3Utools</h3>
+  <p>Flash iPhone pro</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>
+      Outil puissant pour gérer, flasher et jailbreaker les appareils iOS avec simplicité.
+    </p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('3Utools')">Commander</button>
+</div>
+
+
+
+
+<div class="software-card" data-name="OFFICE 2021" data-price="3500">
+  <img src="images/logiciels/office21.jpg" alt="OFFICE MAC">
+  <h3>OFFICE 2021</h3>
+  <p>Suite Bureautique</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>
+      Office 2021 est une suite bureautique complète pour Mac, comprenant Word, Excel, PowerPoint, Outlook et OneNote. Parfait pour les études, le bureau, la gestion de documents et présentations professionnelles sur windows. Licence permanente, performances optimisées et interface moderne.
+    </p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('OFFICE 2021')">Commander</button>
+</div>
+
+
+
+
+
+<div class="software-card" data-name="OFFICE MAC 2019" data-price="3000">
+  <img src="images/logiciels/officemac.jpg" alt="OFFICE MAC">
+  <h3>OFFICE MAC 2019</h3>
+  <p>Suite Bureautique</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>
+      Office Mac 2019 est une suite bureautique complète pour Mac, comprenant Word, Excel, PowerPoint, Outlook et OneNote. Parfait pour les études, le bureau, la gestion de documents et présentations professionnelles sur macOS. Licence permanente, performances optimisées et interface moderne.
+    </p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('OFFICE MAC 2019')">Commander</button>
+</div>
+
+<div class="software-card" data-name="3Utools" data-price="7000">
+  <img src="images/logiciels/3utools.jpg" alt="3Utools">
+  <h3>3Utools</h3>
+  <p>Flash iPhone pro</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>
+      Outil puissant pour gérer, flasher et jailbreaker les appareils iOS avec simplicité.
+    </p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('3Utools')">Commander</button>
+</div>
+
+
+<div class="software-card" data-name="Adobe Premier Pro" data-price="7000">
+  <img src="images/logiciels/adobepr.jpg" alt="Adobe Premier Pro">
+  <h3>Adobe Premier Pro</h3>
+  <p>Montage Vidéo</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>
+      Logiciel de montage vidéo professionnel utilisé pour créer des films, clips et contenus visuels de qualité.
+    </p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Adobe Premier Pro')">Commander</button>
+</div>
+
+<div class="software-card" data-name="Autocad Electrical 2023" data-price="7000">
+  <img src="images/logiciels/autocadelec.jpg" alt="Autocad">
+  <h3>Autocad Electrical 2023</h3>
+  <p>CAO-PC</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>
+      Conçu pour les ingénieurs électriciens, AutoCAD Electrical 2023 permet de créer et gérer facilement des schémas électriques professionnels avec des outils intelligents.
+    </p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Autocad Electrical 2023')">Commander</button>
+</div>
+
+<div class="software-card" data-name="Autocad 2023" data-price="7000">
+  <img src="images/logiciels/autocad.jpg" alt="Autocad">
+  <h3>Autocad 2023</h3>
+  <p>CAO-PC</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>
+      Logiciel de conception assistée par ordinateur (CAO) pour créer des plans et modèles 2D et 3D détaillés.
+    </p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Autocad 2023')">Commander</button>
+</div>
+
+
+<div class="software-card" data-name="Chief Architect" data-price="7000">
+  <img src="images/logiciels/chief.jpg" alt="Chief Architect">
+  <h3>Chief Architect</h3>
+  <p>CAO-PC</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>
+      Logiciel spécialisé dans la conception architecturale 3D pour maisons, bâtiments et intérieurs.
+    </p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Chief Architect')">Commander</button>
+</div>
+
+
+
+<!-- 1. Lumion 2023 -->
+<div class="software-card" data-name="Lumion 2023" data-price="4500">
+  <img src="images/logiciels/lumion2023.jpg" alt="Lumion 2023">
+  <h3>Lumion 2023</h3>
+  <p>Visualisation 3D architecturale rapide et professionnelle</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Créez des rendus 3D spectaculaires et des animations architecturales en quelques clics.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Lumion 2023')">Commander</button>
+</div>
+
+<!-- 2. LabVIEW 2021 -->
+<div class="software-card" data-name="LabVIEW 2021" data-price="5500">
+  <img src="images/logiciels/labview2021.jpg" alt="LabVIEW 2021">
+  <h3>LabVIEW 2021</h3>
+  <p>Programmation graphique et contrôle d'instruments</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Développez des systèmes de mesure et d'automatisation avec une interface graphique intuitive.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('LabVIEW 2021')">Commander</button>
+</div>
+
+<!-- 3. Schemaplic 2021 -->
+<div class="software-card" data-name="Schemaplic 2021" data-price="4000">
+  <img src="images/logiciels/schemaplic2021.jpg" alt="Schemaplic 2021">
+  <h3>Schemaplic 2021</h3>
+  <p>Conception de schémas électriques et diagrammes</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Créez facilement des schémas électriques et automatismes avec des outils professionnels.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Schemaplic 2021')">Commander</button>
+</div>
+
+<!-- 4. Autodesk AutoCAD 2024 -->
+<div class="software-card" data-name="Autodesk AutoCAD 2024" data-price="7000">
+  <img src="images/logiciels/autocad2024.jpg" alt="Autodesk AutoCAD 2024">
+  <h3>Autodesk AutoCAD 2024</h3>
+  <p>Logiciel de dessin technique et conception 2D/3D</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Concevez, éditez et documentez vos projets d’ingénierie et d’architecture avec précision.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Autodesk AutoCAD 2024')">Commander</button>
+</div>
+
+<!-- 5. ArchiCAD 2025 -->
+<div class="software-card" data-name="ArchiCAD 2025" data-price="6500">
+  <img src="images/logiciels/archicad2025.jpg" alt="ArchiCAD 2025">
+  <h3>ArchiCAD 2025</h3>
+  <p>Logiciel BIM pour architecture et design</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Planifiez, modélisez et visualisez vos projets architecturaux dans un environnement BIM complet.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('ArchiCAD 2025')">Commander</button>
+</div>
+
+<!-- 6. Filmora 13 -->
+<div class="software-card" data-name="Filmora 13" data-price="4500">
+  <img src="images/logiciels/filmora13.jpg" alt="Filmora 13">
+  <h3>Filmora 13</h3>
+  <p>Montage vidéo simple et créatif</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Créez facilement des vidéos captivantes avec des outils intuitifs et des effets modernes.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Filmora 13')">Commander</button>
+</div>
+
+<!-- 7. Filmora 2025 -->
+<div class="software-card" data-name="Filmora 2025" data-price="5500">
+  <img src="images/logiciels/filmora2025.jpg" alt="Filmora 2025">
+  <h3>Filmora 2025</h3>
+  <p>Montage vidéo avancé et moderne</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Profitez des dernières fonctionnalités pour créer des vidéos professionnelles et des animations dynamiques.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Filmora 2025')">Commander</button>
+</div>
+
+<!-- 8. Sony Vegas Pro 21 -->
+<div class="software-card" data-name="Sony Vegas Pro 21" data-price="3500">
+  <img src="images/logiciels/vegaspro21.jpg" alt="Sony Vegas Pro 21">
+  <h3>Sony Vegas Pro 21</h3>
+  <p>Montage vidéo professionnel et effets avancés</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Éditez des vidéos avec précision, ajoutez des effets spéciaux et exportez en haute qualité facilement.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Sony Vegas Pro 21')">Commander</button>
+</div>
+
+<!-- 9. Typing Master Pro -->
+<div class="software-card" data-name="Typing Master Pro" data-price="3000">
+  <img src="images/logiciels/typingmasterpro.jpg" alt="Typing Master Pro">
+  <h3>Typing Master Pro</h3>
+  <p>Améliorez votre vitesse et précision de frappe</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Entraînez-vous avec des exercices et des tests pour augmenter votre rapidité et efficacité au clavier.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Typing Master Pro')">Commander</button>
+</div>
+
+<!-- 10. PowerISO Crack -->
+<div class="software-card" data-name="PowerISO Crack" data-price="2500">
+  <img src="images/logiciels/poweriso.jpg" alt="PowerISO Crack">
+  <h3>PowerISO Crack</h3>
+  <p>Gravez, montez et gérez vos images ISO facilement</p>
+  
+  <button class="desc-btn">
+    Description <span class="arrow">&#9662;</span>
+  </button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Créez, éditez et montez des fichiers ISO rapidement et efficacement avec PowerISO.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('PowerISO Crack')">Commander</button>
+</div>
+
+ <!-- Tu peux ajouter plus de logiciels ici -->
+  </div>
+
+  <div id="retour">
+    <a href="index.html">🏠 Accueil</a>
+  </div>
+
+  <!-- Panier -->
+  <div id="cartIcon" onclick="openDrawer()">
+    🛒 <span id="cartCount">0</span>
+  </div>
+
+  <div id="cartDrawer">
+    <div class="drawer-header">
+      <span>Votre Panier</span>
+      <button onclick="closeDrawer()">✖</button>
+    </div>
+    <div class="drawer-items" id="drawerItems"></div>
+    <p><strong>Sous-total :</strong> <span id="subtotal">0 FCFA</span></p>
+    <a class="commande" href="commande.html" style="background:#0ff;padding:10px 15px;display:inline-block;border-radius:5px;">Passer la commande</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <h3>GAMEX INSTALL</h3>
+        <p>Votre boutique en ligne pour jeux, logiciels et OS à prix réduit.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="jeux.html">Jeux</a></li>
+          <li><a href="logiciels.html">Logiciels</a></li>
+          <li><a href="offres.html">Offres</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="aide-faq.html">Aide & FAQ</a></li>
+          <li><a href="retour.html">Politique de retour</a></li>
+          <li><a href="cgv.html">Conditions générales</a></li>
+          <li><a href="confodentialite.html">Confidentialité</a></li>
+        </ul>
+      </div>
+      <div>
+     <button id="offresBtn">Offres en Promotion</button><br /><br />
+        <div class="socials">
+          <a href="https://www.tiktok.com/@user3199284392790?_r=1&_t=ZM-91HwTEuw7GC"><img src="../images/tikok.png" height="40px",width="40px" alt="Tiktok"></a>
+          <a href="#"><img src="../images/instagram.jpeg" height="40px",width="40px" alt="Instagram"></a>
+          <a href="#"><img src="../images/facebook.png" height="40px",width="40px" alt="Facebook"></a>
+          <a href="https://chat.whatsapp.com/IAi6jELFriK0neaBFJo34z?mode=ems_copy_h_t"><img src="../images/whatsapp.png" height="40px",width="40px" alt="whatsapp"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 GAMEX INSTALL - Tous droits réservés | Développé par <a href="#">COURLY DEVS</a></p>
+    </div>
+  </footer>
+  
+  <script src="panier.js"></script>
+</body>
+</html>

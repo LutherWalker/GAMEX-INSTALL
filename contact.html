@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - GameX Install</title>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    footer p {
+  margin: 12px 0;
+  font-size: 15px;
+  color: #ccc;
+}
+
+footer a {
+  color: #00ffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: #ff00ff;
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+}
+
+footer .socials {
+  margin: 20px 0;
+}
+
+footer .socials a {
+  margin: 0 12px;
+  display: inline-block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+footer .socials a img {
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0,255,255,0.6);
+  transition: 0.4s;
+}
+
+footer .socials a:hover img {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 10px #ff00ff);
+}
+
+footer h2 {
+  margin-top: 25px;
+  font-size: 20px;
+  text-shadow: 0 0 12px #00ffff, 0 0 25px #ff00ff;
+  animation: pulse-glow 2s infinite alternate;
+}
+
+@keyframes pulse-glow {
+  from { text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff; }
+  to { text-shadow: 0 0 20px #ff00ff, 0 0 35px #00ffff; }
+}
+  </style>
+
+</head>
+<body>
+    <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo2.png" alt="GameX Install Logo">
+      </a>
+    </div>
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <nav class="nav-mobile" id="nav-mobile">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="jeux.html">Jeux</a></li>
+        <li><a href="logiciels.html">Logiciels</a></li>
+        <li><a href="systemes.html">Systèmes</a></li>
+        <li class="submenu-mobile">
+          <a href="#" class="support-toggle">Support ▾</a>
+          <ul class="sub-menu-mobile">
+            <li><a href="aide-faq.html">Aide & FAQ</a></li>
+            <li><a href="retour.html">Politique de retour</a></li>
+            <li><a href="confidentialite.html">Confidentialité</a></li>
+            <li><a href="cgv.html">Conditions générales</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Contactez GameX Install</h1>
+
+  <div class="contact-container">
+    <form onsubmit="sendMail(event)">
+      <input type="text" name="user_name" placeholder="👤 Votre nom" required>
+      <input type="email" name="user_email" placeholder="📧 Votre email" required>
+      <input type="tel" name="user_phone" placeholder="📱 Votre numéro de téléphone" required>
+      <textarea name="message" rows="6" placeholder="💬 Votre message..." required></textarea>
+      <button type="submit">🚀 Envoyer le message</button>
+    </form>
+    <div class="success-message">✅ Merci ! Votre message a bien été envoyé.</div>
+  </div>
+  
+<footer>
+  <p>© 2025 GAMEX INSTALL - Tous droits réservés | Développé par
+    <a href="#">COURLY DEVS</a>
+  </p>
+  
+  <p>Nous suivre sur les réseaux sociaux</p>
+  <hr />
+  
+  <div class="socials">
+    <a href="https://www.tiktok.com/@user3199284392790?_r=1&_t=ZM-91HwTEuw7GC"><img src="../images/tikok.png" height="40" width="40" alt="Tiktok"></a>
+    <a href="#"><img src="../images/instagram.jpeg" height="40" width="40" alt="Instagram"></a>
+    <a href="#"><img src="../images/facebook.png" height="40" width="40" alt="Facebook"></a>
+    <a href="https://chat.whatsapp.com/IAi6jELFriK0neaBFJo34z?mode=ems_copy_h_t"><img src="../images/whatsapp.png" height="40" width="40" alt="WhatsApp"></a>
+  </div>
+  
+</footer>
+
+<script>
+(function(_0x2a666c,_0x483685){const _0x1ae3d1=_0x4de2,_0x4615ce=_0x2a666c();while(!![]){try{const _0x1ccbe8=-parseInt(_0x1ae3d1(0xa7))/0x1*(parseInt(_0x1ae3d1(0xa8))/0x2)+parseInt(_0x1ae3d1(0xa9))/0x3+parseInt(_0x1ae3d1(0x9a))/0x4+-parseInt(_0x1ae3d1(0x94))/0x5+parseInt(_0x1ae3d1(0x9c))/0x6+parseInt(_0x1ae3d1(0x9b))/0x7+parseInt(_0x1ae3d1(0x97))/0x8;if(_0x1ccbe8===_0x483685)break;else _0x4615ce['push'](_0x4615ce['shift']());}catch(_0x11aadd){_0x4615ce['push'](_0x4615ce['shift']());}}}(_0x2851,0xf0d52),(function(){const _0x4185f7=_0x4de2;emailjs[_0x4185f7(0xa3)]('CHHkk-QhzARjuEwW_');}()));function _0x4de2(_0xec93f2,_0x2ccb46){const _0x2851ae=_0x2851();return _0x4de2=function(_0x4de2c9,_0x3f33a0){_0x4de2c9=_0x4de2c9-0x94;let _0xaaee15=_0x2851ae[_0x4de2c9];return _0xaaee15;},_0x4de2(_0xec93f2,_0x2ccb46);}function sendMail(_0x5134d9){const _0x90807c=_0x4de2;_0x5134d9[_0x90807c(0x9f)](),emailjs['sendForm'](_0x90807c(0xa4),_0x90807c(0xaa),_0x5134d9[_0x90807c(0x9e)])[_0x90807c(0x99)](function(){const _0x1d0def=_0x90807c;let _0x1deaf5=document[_0x1d0def(0x98)](_0x1d0def(0x95));_0x1deaf5[_0x1d0def(0xa5)][_0x1d0def(0x96)]=_0x1d0def(0xa6),_0x5134d9[_0x1d0def(0x9e)][_0x1d0def(0xa1)](),setTimeout(()=>{const _0x38c11a=_0x1d0def;_0x1deaf5[_0x38c11a(0xa5)][_0x38c11a(0x96)]=_0x38c11a(0x9d);},0x1388);},function(_0x37c955){const _0x433f91=_0x90807c;alert(_0x433f91(0xa2)+_0x37c955[_0x433f91(0xa0)]);});}function _0x2851(){const _0x3729d3=['style','block','5970OYytel','398uvSGNy','4084158JQXkEO','template_GameX','6902095CMzMNB','.success-message','display','1531832opHYFg','querySelector','then','1620652HPAMDX','772877MxREWF','8918760zCmkcc','none','target','preventDefault','text','reset','âŒ\x20Erreur,\x20rÃ©essayez\x20:\x20','init','service_default'];_0x2851=function(){return _0x3729d3;};return _0x2851();}
+</script>
+<script src="panier.js"></script>
+</body>
+</html>

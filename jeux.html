@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GameX Install - Jeux</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="images/logo2.png" alt="GameX Install Logo">
+    </a>
+  </div>
+  <div class="burger" id="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  <nav class="nav-mobile" id="nav-mobile">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">A Propos</a></li>
+      <li><a href="jeux.html">Jeux</a></li>
+      <li><a href="logiciels.html">Logiciels</a></li>
+      <li><a href="systemes.html">Systèmes</a></li>
+      <li class="submenu-mobile">
+        <a href="#" class="support-toggle">Support ▾</a>
+        <ul class="sub-menu-mobile">
+          <li><a href="aide-faq.html">Aide & FAQ</a></li>
+          <li><a href="retour.html">Politique de retour</a></li>
+          <li><a href="confidentialite.html">Confidentialité</a></li>
+          <li><a href="cgv.html">Conditions générales</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+  <div class="overlay" id="overlay" onclick="closeDrawer()"></div>
+
+  <div class="header">
+    <h1>🎮 Jeux GameX Install 🎮</h1>
+  </div>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Rechercher un jeu...">
+  </div>
+
+<div class="products">
+  
+  <div class="game-card" data-name="RiMS Racing" data-price="5000">
+    <img src="images/jeux/rims.jpg" alt="RiMS Racing">
+    <h3>RiMS Racing</h3>
+    <p>Simulation moto (10Go)</p>
+    
+    <!-- Bouton Description -->
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <!-- Zone Description (fermée par défaut) -->
+    <div class="description-box" style="display: none;">
+      <p>
+        RiMS Racing est une simulation moto ultra-réaliste avec gestion des
+        composants, réglages précis et un réalisme poussé. Taille : 10Go.
+      </p>
+    </div>
+    
+    <!-- Bouton Commander -->
+    <button onclick="ajouterAuPanier('RiMS Racing')">Commander</button>
+  </div>
+  
+  <div class="game-card" data-name="Blur" data-price="2500">
+    <img src="images/jeux/blur.jpg" alt="Blur">
+    <h3>Blur - PC</h3>
+    <p>Course de voiture</p>
+    
+    <!-- Bouton Description -->
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <!-- Zone Description (fermée par défaut) -->
+    <div class="description-box" style="display: none;">
+      <p>
+        Blur est un jeu de course arcade avec des graphismes stylés et des
+        power-ups spectaculaires. Taille : 6Go.
+      </p>
+    </div>
+    
+    <!-- Bouton Commander -->
+    <button onclick="ajouterAuPanier('Blur')">Commander</button>
+  </div>
+  
+  <div class="game-card" data-name="Need For Speed Most Wanted" data-price="2500">
+    <img src="images/jeux/nfsmw.jpg" alt="Need For Speed Most Wanted">
+    <h3>Need For Speed Most Wanted - PC</h3>
+    <p>Course de voiture</p>
+    <!-- Bouton Description -->
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <!-- Zone Description (fermée par défaut) -->
+    <div class="description-box" style="display: none;">
+      <p>
+        Plonge dans l’adrénaline pure avec Need For Speed Most Wanted, un jeu de course légendaire qui a marqué toute une génération de gamers. Affronte les pilotes les plus recherchés de la ville dans des poursuites endiablées et deviens le numéro 1 de la Blacklist
+      </p>
+    </div>
+
+    <button onclick="ajouterAuPanier('Need For Speed Most Wanted')">Commander</button>
+  </div>
+  
+  <div class="game-card" data-name="Need For Speed Heat" data-price="3000">
+    <img src="images/jeux/nfsheat.jpg" alt="Need For Speed Heat">
+    <h3>Need For Speed Heat - PC</h3>
+    <p>Course de voiture</p>
+    
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <div class="description-box" style="display: none;">
+      <p>
+        Need For Speed Heat offre des courses urbaines intenses de jour et de nuit avec une personnalisation poussée des voitures.
+      </p>
+    </div>
+    
+    <button onclick="ajouterAuPanier('Need For Speed Heat')">Commander</button>
+  </div>
+  
+  <div class="game-card" data-name="GTA V" data-price="4500">
+    <img src="images/jeux/gta5.jpg" alt="GTA V">
+    <h3>GTA V</h3>
+    <p>Action, Aventure - PC</p>
+    
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <div class="description-box" style="display: none;">
+      <p>
+        GTA V est un jeu d'action-aventure en monde ouvert où vous explorez Los Santos et ses environs avec trois personnages principaux.
+      </p>
+    </div>
+    
+    <button onclick="ajouterAuPanier('GTA V')">Commander</button>
+  </div>
+  
+  <div class="game-card" data-name="GTA IV" data-price="4000">
+    <img src="images/jeux/gta4.jpg" alt="GTA IV">
+    <h3>GTA IV</h3>
+    <p>Action, Aventure - PC, PS4, Xbox</p>
+    
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <div class="description-box" style="display: none;">
+      <p>
+        GTA IV suit l’histoire de Niko Bellic, un immigrant cherchant fortune et vengeance dans Liberty City.
+      </p>
+    </div>
+    
+    <button onclick="ajouterAuPanier('GTA IV')">Commander</button>
+  </div>
+  
+  <div class="game-card" data-name="NBA 2K20" data-price="5000">
+    <img src="images/jeux/nba2k20.jpg" alt="NBA 2K20">
+    <h3>NBA 2K20</h3>
+    <p>Sport-Basket</p>
+    
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <div class="description-box" style="display: none;">
+      <p>
+        NBA 2K20 propose une expérience de basket réaliste avec gameplay amélioré, MyCareer et modes multijoueur.
+      </p>
+    </div>
+    
+    <button onclick="ajouterAuPanier('NBA 2K20')">Commander</button>
+  </div>
+  
+    <div class="game-card" data-name="MAFIA 3" data-price="3500">
+    <img src="images/jeux/mafia3.jpg" alt="Mafia 3">
+    <h3>MAFIA 3 - PC</h3>
+    <p>Mission-Aventure</p>
+    
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <div class="description-box" style="display: none;">
+      <p>
+        Mafia III est un jeu d’action en monde ouvert où tu incarnes Lincoln Clay dans les années 60. Après avoir perdu sa famille criminelle, il se lance dans une quête de vengeance et construit son propre empire mafieux à New Bordeaux. Entre action, braquages, infiltration et décisions stratégiques, chaque choix influence ton ascension dans le crime organisé.
+      </p>
+    </div>
+    
+    <button onclick="ajouterAuPanier('MAFIA 3')">Commander</button>
+  </div>
+
+  
+  <div class="game-card" data-name="FIFA 24" data-price="10000">
+    <img src="images/jeux/fifa.jpg" alt="FIFA 24">
+    <h3>FIFA 24</h3>
+    <p>Sport-Football</p>
+    
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <div class="description-box" style="display: none;">
+      <p>
+        FIFA 24 est le dernier opus de football avec graphismes réalistes, modes carrière et multijoueur en ligne.
+      </p>
+    </div>
+    
+    <button onclick="ajouterAuPanier('FIFA 24')">Commander</button>
+  </div>
+  
+  <div class="game-card" data-name="Pes 2024" data-price="3000">
+    <img src="images/jeux/pes2024.jpg" alt="Pes 2024">
+    <h3>Pes 2024</h3>
+    <p>Sport-Football</p>
+    
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <div class="description-box" style="display: none;">
+      <p>
+        PES 2024 offre un gameplay de football réaliste avec licences, équipes et modes compétitifs améliorés.
+      </p>
+    </div>
+    
+    <button onclick="ajouterAuPanier('Pes 2024')">Commander</button>
+  </div>
+  
+  <div class="game-card" data-name="Pes 2025" data-price="3500">
+    <img src="images/jeux/pes2025.jpg" alt="Pes 2025">
+    <h3>Pes 2025</h3>
+    <p>Sport-Football</p>
+    
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <div class="description-box" style="display: none;">
+      <p>
+        PES 2025 améliore encore le réalisme du football avec de nouvelles animations, stratégies et modes en ligne.
+      </p>
+    </div>
+    
+    <button onclick="ajouterAuPanier('Pes 2025')">Commander</button>
+  </div>
+  
+  <div class="game-card" data-name="NBA 2K23" data-price="5500">
+    <img src="images/jeux/nba2k23.jpg" alt="NBA 2K23">
+    <h3>NBA 2K23</h3>
+    <p>Sport-Basket</p>
+    
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <div class="description-box" style="display: none;">
+      <p>
+        NBA 2K23 propose un basket immersif avec un gameplay fluide, des modes carrière et compétitions en ligne.
+      </p>
+    </div>
+    
+    <button onclick="ajouterAuPanier('NBA 2K23')">Commander</button>
+  </div>
+  
+  <div class="game-card" data-name="Sleeping Dogs" data-price="4500">
+    <img src="images/jeux/sleepingdogs.jpg" alt="Sleeping Dogs">
+    <h3>Sleeping Dogs</h3>
+    <p>Action, Aventure - PC</p>
+    
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <div class="description-box" style="display: none;">
+      <p>
+        Sleeping Dogs est un jeu d’action-aventure en monde ouvert où vous incarnez un policier infiltré à Hong Kong.
+      </p>
+    </div>
+    
+    <button onclick="ajouterAuPanier('Sleeping Dogs')">Commander</button>
+  </div>
+  
+
+  <div class="game-card" data-name="Resident Evil 5" data-price="3500">
+    <img src="images/jeux/Evil5.jpg" alt="Resident Evil 5">
+    <h3>Resident Evil 5</h3>
+    <p>Action, Aventure - PC</p>
+    
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <div class="description-box" style="display: none;">
+      <p>
+        Resident Evil 5 plonge les joueurs dans une lutte contre les créatures infectées en Afrique, avec un mode coopération marquant.
+      </p>
+    </div>
+    
+    <button onclick="ajouterAuPanier('Resident Evil 5')">Commander</button>
+  </div>
+  
+  <div class="game-card" data-name="Resident Evil 6" data-price="3500">
+    <img src="images/jeux/Evil6.jpg" alt="Resident Evil 6">
+    <h3>Resident Evil 6</h3>
+    <p>Action, Aventure - PC</p>
+    
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <div class="description-box" style="display: none;">
+      <p>
+        Resident Evil 6 propose plusieurs campagnes entrelacées, mêlant survie, action et horreur avec de nombreux personnages jouables.
+      </p>
+    </div>
+    
+    <button onclick="ajouterAuPanier('Resident Evil 6')">Commander</button>
+  </div>
+  
+    <div class="game-card" data-name="Resident Evil 7" data-price="4500">
+    <img src="images/jeux/Evil7.jpg" alt="Resident Evil 7">
+    <h3>Resident Evil 7</h3>
+    <p>Action, Aventure - PC</p>
+    
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <div class="description-box" style="display: none;">
+      <p>
+        Resident Evil 7 te plonge dans une maison terrifiante en vue subjective, où survie, horreur et tension psychologique sont au maximum.
+      </p>
+    </div>
+    
+    <button onclick="ajouterAuPanier('Resident Evil 7')">Commander</button>
+  </div>
+
+  
+  <div class="game-card" data-name="Hitman 6" data-price="4500">
+    <img src="images/jeux/hitman6.jpg" alt="Hitman 6">
+    <h3>Hitman 6</h3>
+    <p>Action, Aventure - PC, PS4</p>
+    
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <div class="description-box" style="display: none;">
+      <p>
+        Hitman 6 met en scène l’Agent 47 dans des missions d’infiltration variées où la discrétion et la stratégie sont primordiales.
+      </p>
+    </div>
+    
+    <button onclick="ajouterAuPanier('Hitman 6')">Commander</button>
+  </div>
+  
+  <div class="game-card" data-name="Watch Dogs 2" data-price="5000">
+    <img src="images/jeux/watch.jpg" alt="Watch Dogs 2">
+    <h3>Watch Dogs 2</h3>
+    <p>Action, Aventure - PC</p>
+    
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <div class="description-box" style="display: none;">
+      <p>
+        Watch Dogs 2 suit Marcus, un hacker de DedSec, explorant San Francisco dans un monde ouvert rempli de possibilités technologiques.
+      </p>
+    </div>
+    
+    <button onclick="ajouterAuPanier('Watch Dogs 2')">Commander</button>
+  </div>
+  
+  <div class="game-card" data-name="Watch Dogs Legion" data-price="6000">
+    <img src="images/jeux/legion.jpg" alt="Watch Dogs Legion">
+    <h3>Watch Dogs Legion</h3>
+    <p>Action, Aventure - PC</p>
+    
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <div class="description-box" style="display: none;">
+      <p>
+        Watch Dogs Legion permet de recruter n’importe quel citoyen de Londres pour combattre un régime oppressif grâce au hacking.
+      </p>
+    </div>
+    
+    <button onclick="ajouterAuPanier('Watch Dogs Legion')">Commander</button>
+  </div>
+  
+  <div class="game-card" data-name="Uncharted 4" data-price="4500">
+    <img src="images/jeux/uncharted.jpg" alt="Uncharted 4">
+    <h3>Uncharted 4</h3>
+    <p>Action, Aventure - PC, PS4</p>
+    
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <div class="description-box" style="display: none;">
+      <p>
+        Uncharted 4 : A Thief’s End suit Nathan Drake dans une dernière aventure pleine de trésors, mystères et scènes spectaculaires.
+      </p>
+    </div>
+    
+    <button onclick="ajouterAuPanier('Uncharted 4')">Commander</button>
+  </div>
+  
+  <div class="game-card" data-name="Uncharted Lost Legacy" data-price="4500">
+    <img src="images/jeux/uncharted2.jpg" alt="Uncharted Lost Legacy">
+    <h3>Uncharted Lost Legacy</h3>
+    <p>Action, Aventure - PC</p>
+    
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <div class="description-box" style="display: none;">
+      <p>
+        Uncharted Lost Legacy met en scène Chloe Frazer et Nadine Ross dans une quête pleine d’énigmes et d’action en Inde.
+      </p>
+    </div>
+    
+    <button onclick="ajouterAuPanier('Uncharted Lost Legacy')">Commander</button>
+  </div>
+  
+  <div class="game-card" data-name="Days Gone" data-price="5000">
+    <img src="images/jeux/days.jpg" alt="Days Gone">
+    <h3>Days Gone</h3>
+    <p>Survie, Zombies - PC</p>
+    
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <div class="description-box" style="display: none;">
+      <p>
+        Days Gone est un jeu de survie en monde ouvert où Deacon St. John affronte hordes de zombies et dangers humains.
+      </p>
+    </div>
+    
+    <button onclick="ajouterAuPanier('Days Gone')">Commander</button>
+  </div>
+  
+  <div class="game-card" data-name="Dead Island 2" data-price="5000">
+    <img src="images/jeux/deadisland.jpg" alt="Dead Island 2">
+    <h3>Dead Island 2</h3>
+    <p>Action, Zombies - PC</p>
+    
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <div class="description-box" style="display: none;">
+      <p>
+        Dead Island 2 propose une aventure de survie en Californie envahie par les zombies, avec combats dynamiques et humour noir.
+      </p>
+    </div>
+    
+    <button onclick="ajouterAuPanier('Dead Island 2')">Commander</button>
+  </div>
+  
+  <div class="game-card" data-name="Call of duty black Ops 3" data-price="4000">
+    <img src="images/jeux/callofdutybo3.jpg" alt="Call of duty black Ops 3">
+    <h3>Call of duty black Ops 3</h3>
+    <p>Action, Aventure - PC</p>
+    
+    <button class="desc-btn">
+      Description <span class="arrow">&#9662;</span>
+    </button>
+    
+    <div class="description-box" style="display: none;">
+      <p>
+        Call of Duty Black Ops 3 est un FPS dynamique dans un futur sombre où la technologie militaire domine. Le jeu propose une campagne immersive, un multijoueur rapide et stratégique, ainsi que le mode Zombie culte. Idéal pour les joueurs qui aiment l’action intense et les combats futuristes.
+      </p>
+    </div>
+    
+    <button onclick="ajouterAuPanier('Call of duty black Ops 3')">Commander</button>
+  </div>
+  
+ <!-- 1. Fortnite -->
+<div class="game-card" data-name="Fortnite" data-price="4500">
+  <img src="images/jeux/fortnite.jpg" alt="Fortnite">
+  <h3>Fortnite - PC</h3>
+  <p>Bataille Royale</p>
+  
+  <button class="desc-btn">Description <span class="arrow">&#9662;</span></button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Fortnite est un jeu de bataille royale où les joueurs s'affrontent pour être les derniers survivants dans un univers coloré et dynamique.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Fortnite')">Commander</button>
+</div>
+
+<!-- 2. Uncharted: Legacy of Thieves Collection -->
+<div class="game-card" data-name="Uncharted Legacy of Thieves Collection" data-price="4000">
+  <img src="images/jeux/unchartedlegacy.jpg" alt="Uncharted Legacy of Thieves Collection">
+  <h3>Uncharted - PC</h3>
+  <p>Aventure / Action</p>
+  
+  <button class="desc-btn">Description <span class="arrow">&#9662;</span></button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Revivez les aventures de Nathan Drake dans une collection remasterisée avec tous les DLC et graphismes améliorés.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Uncharted Legacy of Thieves Collection')">Commander</button>
+</div>
+
+<!-- 3. Gears 5 -->
+<div class="game-card" data-name="Gears 5" data-price="5500">
+  <img src="images/jeux/gears5.jpg" alt="Gears 5">
+  <h3>Gears 5 - Xbox</h3>
+  <p>Tir / Action</p>
+  
+  <button class="desc-btn">Description <span class="arrow">&#9662;</span></button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Gears 5 offre des combats intenses et une campagne captivante dans un monde post-apocalyptique avec des graphismes impressionnants.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Gears 5')">Commander</button>
+</div>
+
+<!-- 4. Sniper Elite 3 -->
+<div class="game-card" data-name="Sniper Elite 3" data-price="3000">
+  <img src="images/jeux/sniper3.jpg" alt="Sniper Elite 3">
+  <h3>Sniper Elite 3 - PC</h3>
+  <p>Tir / Stratégie</p>
+  
+  <button class="desc-btn">Description <span class="arrow">&#9662;</span></button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Sniper Elite 3 vous plonge dans des missions de tir de précision en Afrique du Nord pendant la Seconde Guerre mondiale.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Sniper Elite 3')">Commander</button>
+</div>
+
+<!-- 5. Forza Horizon 5 -->
+<div class="game-card" data-name="Forza Horizon 5" data-price="5000">
+  <img src="images/jeux/forzahorizon5.jpg" alt="Forza Horizon 5">
+  <h3>Forza Horizon 5 - PC/Xbox</h3>
+  <p>Course / Simulation</p>
+  
+  <button class="desc-btn">Description <span class="arrow">&#9662;</span></button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Explorez le Mexique dans ce jeu de course en monde ouvert avec des centaines de véhicules et des graphismes époustouflants.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Forza Horizon 5')">Commander</button>
+</div>
+
+<!-- 6. FIFA 23 -->
+<div class="game-card" data-name="FIFA 23" data-price="5500">
+  <img src="images/jeux/fifa23.jpg" alt="FIFA 23">
+  <h3>FIFA 23 - PC/PS/Xbox</h3>
+  <p>Sport / Football</p>
+  
+  <button class="desc-btn">Description <span class="arrow">&#9662;</span></button>
+  
+  <div class="description-box" style="display: none;">
+    <p>FIFA 23 offre une expérience footballistique réaliste avec les clubs, joueurs et championnats officiels du monde entier.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('FIFA 23')">Commander</button>
+</div>
+
+<!-- 7. Assassin’s Creed Valhalla -->
+<div class="game-card" data-name="Assassin’s Creed Valhalla" data-price="4500">
+  <img src="images/jeux/acvalhalla.jpg" alt="Assassin’s Creed Valhalla">
+  <h3>Assassin’s Creed Valhalla - PC/PS/Xbox</h3>
+  <p>Aventure / RPG</p>
+  
+  <button class="desc-btn">Description <span class="arrow">&#9662;</span></button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Incarnez Eivor, un Viking, et explorez l’Angleterre médiévale dans cette aventure épique remplie de combats et de quêtes.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Assassin’s Creed Valhalla')">Commander</button>
+</div>
+
+<!-- 8. Horizon Forbidden West -->
+<div class="game-card" data-name="Horizon Forbidden West" data-price="4500">
+  <img src="images/jeux/horizonfw.jpg" alt="Horizon Forbidden West">
+  <h3>Horizon Forbidden West - PS5</h3>
+  <p>Aventure / Action</p>
+  
+  <button class="desc-btn">Description <span class="arrow">&#9662;</span></button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Rejoignez Aloy dans une aventure post-apocalyptique avec des créatures mécaniques dans un monde vaste et magnifique.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Horizon Forbidden West')">Commander</button>
+</div>
+
+<!-- 9. Minecraft Story Mode -->
+<div class="game-card" data-name="Minecraft Story Mode" data-price="3500">
+  <img src="images/jeux/minecraftstory.jpg" alt="Minecraft Story Mode">
+  <h3>Minecraft Story Mode - PC/Console</h3>
+  <p>Aventure / Construction</p>
+  
+  <button class="desc-btn">Description <span class="arrow">&#9662;</span></button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Minecraft Story Mode est un jeu d’aventure où vos choix influencent l’histoire dans l’univers créatif de Minecraft.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Minecraft Story Mode')">Commander</button>
+</div>
+
+<!-- 10. God of War Ragnarok -->
+<div class="game-card" data-name="God of War Ragnarok" data-price="5000">
+  <img src="images/jeux/gowragnarok.jpg" alt="God of War Ragnarok">
+  <h3>God of War Ragnarok - PS5</h3>
+  <p>Aventure / Action</p>
+  
+  <button class="desc-btn">Description <span class="arrow">&#9662;</span></button>
+  
+  <div class="description-box" style="display: none;">
+    <p>God of War Ragnarok suit Kratos et Atreus dans une aventure épique à travers la mythologie nordique, pleine d’action et de combats intenses.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('God of War Ragnarok')">Commander</button>
+</div>
+
+<!-- 11. The Witcher 3: Wild Hunt -->
+<div class="game-card" data-name="The Witcher 3: Wild Hunt" data-price="4500">
+  <img src="images/jeux/witcher3.jpg" alt="The Witcher 3">
+  <h3>The Witcher 3: Wild Hunt - PC/PS/Xbox</h3>
+  <p>RPG / Action</p>
+  
+  <button class="desc-btn">Description <span class="arrow">&#9662;</span></button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Incarnez Geralt de Riv dans un RPG immense avec un scénario captivant et un monde ouvert rempli de monstres et de quêtes.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('The Witcher 3: Wild Hunt')">Commander</button>
+</div>
+
+<!-- 12. Elden Ring Deluxe -->
+<div class="game-card" data-name="Elden Ring Deluxe" data-price="4500">
+  <img src="images/jeux/eldenringdeluxe.jpg" alt="Elden Ring Deluxe">
+  <h3>Elden Ring Deluxe - PC/PS/Xbox</h3>
+  <p>RPG / Action</p>
+  
+  <button class="desc-btn">Description <span class="arrow">&#9662;</span></button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Elden Ring Deluxe offre un monde ouvert vaste et mystérieux avec des combats difficiles et une exploration profonde.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Elden Ring Deluxe')">Commander</button>
+</div>
+
+<!-- 13. Elden Ring Nightreign -->
+<div class="game-card" data-name="Elden Ring Nightreign" data-price="5000">
+  <img src="images/jeux/eldenringnightreign.jpg" alt="Elden Ring Nightreign">
+  <h3>Elden Ring Nightreign - PC/PS/Xbox</h3>
+  <p>RPG / Action</p>
+  
+  <button class="desc-btn">Description <span class="arrow">&#9662;</span></button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Version spéciale d’Elden Ring avec contenus additionnels et améliorations exclusives pour les fans de RPG difficiles.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Elden Ring Nightreign')">Commander</button>
+</div>
+
+<!-- 14. Marvel’s Spider-Man: Miles Morales -->
+<div class="game-card" data-name="Marvel’s Spider-Man Miles Morales" data-price="3500">
+  <img src="images/jeux/spidermiles.jpg" alt="Spider-Man Miles Morales">
+  <h3>Marvel’s Spider-Man: Miles Morales - PS5</h3>
+  <p>Aventure / Action</p>
+  
+  <button class="desc-btn">Description <span class="arrow">&#9662;</span></button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Incarnez Miles Morales et découvrez ses pouvoirs dans un New York dynamique et plein d’action.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Marvel’s Spider-Man Miles Morales')">Commander</button>
+</div>
+
+<!-- 15. Marvel’s Spider-Man Remastered -->
+<div class="game-card" data-name="Marvel’s Spider-Man Remastered" data-price="4500">
+  <img src="images/jeux/spidermanremastered.jpg" alt="Spider-Man Remastered">
+  <h3>Marvel’s Spider-Man Remastered - PC/PS5</h3>
+  <p>Aventure / Action</p>
+  
+  <button class="desc-btn">Description <span class="arrow">&#9662;</span></button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Redécouvrez Spider-Man dans cette version remasterisée avec graphismes améliorés et contenus additionnels.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Marvel’s Spider-Man Remastered')">Commander</button>
+</div>
+
+<!-- 16. Batman Arkham Knight Complete Edition -->
+<div class="game-card" data-name="Batman Arkham Knight Complete Edition" data-price="4500">
+  <img src="images/jeux/batmanarkham.jpg" alt="Batman Arkham Knight Complete Edition">
+  <h3>Batman Arkham Knight Complete Edition - PC/PS/Xbox</h3>
+  <p>Aventure / Action</p>
+  
+  <button class="desc-btn">Description <span class="arrow">&#9662;</span></button>
+  
+  <div class="description-box" style="display: none;">
+    <p>Plongez dans l’univers de Gotham et combattez le crime avec Batman dans cette édition complète incluant tous les DLC.</p>
+  </div>
+  
+  <button onclick="ajouterAuPanier('Batman Arkham Knight Complete Edition')">Commander</button>
+</div>
+
+
+
+
+
+  
+  <!-- ... (suite des autres jeux) ... -->
+</div>
+  </div>
+
+  <div id="retour">
+    <a href="index.html">⬅ Retour à l’accueil</a>
+  </div>
+
+  <!-- Panier -->
+  <div id="cartIcon" onclick="openDrawer()">
+    🛒 <span id="cartCount">0</span>
+  </div>
+
+  <div id="cartDrawer">
+    <div class="drawer-header">
+      <span>Votre Panier</span>
+      <button onclick="closeDrawer()">✖</button>
+    </div>
+    <div class="drawer-items" id="drawerItems"></div>
+    <p>Sous-total :<span id="subtotal">0 FCFA</span></p>
+    <a class="commande" href="commande.html" style="background:#0ff;padding:10px 15px;display:inline-block;border-radius:5px;">Passer la commande</a>
+  </div>
+  
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <h3>GAMEX INSTALL</h3>
+        <p>Votre boutique en ligne pour jeux, logiciels et OS à prix réduit.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="jeux.html">Jeux</a></li>
+          <li><a href="logiciels.html">Logiciels</a></li>
+          <li><a href="offres.html">Offres</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="aide-faq.html">Aide & FAQ</a></li>
+          <li><a href="retour.html">Politique de retour</a></li>
+          <li><a href="cgv.html">Conditions générales</a></li>
+          <li><a href="confodentialite.html">Confidentialité</a></li>
+        </ul>
+      </div>
+      <div>
+        <button id="offresBtn">Offres en Promotion</button>
+        <div class="socials">
+          <a href="https://www.tiktok.com/@user3199284392790?_r=1&_t=ZM-91HwTEuw7GC"><img src="../images/tikok.png" height="40px",width="40px" alt="Tiktok"></a>
+          <a href="#"><img src="../images/instagram.jpeg" height="40px",width="40px" alt="Instagram"></a>
+          <a href="#"><img src="../images/facebook.png" height="40px",width="40px" alt="Facebook"></a>
+          <a href="https://chat.whatsapp.com/IAi6jELFriK0neaBFJo34z?mode=ems_copy_h_t"><img src="../images/whatsapp.png" height="40px",width="40px" alt="whatsapp"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 GAMEX INSTALL - Tous droits réservés | Développé par <a href="#">COURLY DEVS</a></p>
+    </div>
+  </footer>
+
+  <script src="panier.js"></script>
+</body>
+</html>

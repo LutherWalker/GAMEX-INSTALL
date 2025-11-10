@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aide & FAQ - GameX Install</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at center, #000000 0%, #0a0a0a 100%);
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      background: rgba(0, 255, 255, 0.1);
+      border-bottom: 1px solid #00ffff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #00ffff;
+    }
+    .faq-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,255,255,0.3);
+    }
+    .faq-container h2 {
+      color: #00ffff;
+      border-bottom: 1px solid #00ffff;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+    .faq {
+      margin: 20px 0;
+    }
+    .faq h3 {
+      cursor: pointer;
+      padding: 10px;
+      background: rgba(0, 255, 255, 0.1);
+      border: 1px solid #00ffff;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .faq h3:hover {
+      background: rgba(0, 255, 255, 0.2);
+      box-shadow: 0 0 10px #00ffff;
+    }
+    .faq p {
+      display: none;
+      margin: 10px 0 0;
+      padding: 10px;
+      color: #ddd;
+      border-left: 3px solid #00ffff;
+    }
+    .btn-home {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      color: #fff;
+      background: #00ffff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn-home:hover {
+      background: #00cccc;
+      box-shadow: 0 0 10px #00ffff;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #00ffff;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      background: rgba(0, 255, 255, 0.05);
+    }
+    footer a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Aide & FAQ</h1>
+  </header>
+
+  <div class="faq-container">
+    <h2>Questions fréquentes</h2>
+
+    <div class="faq">
+      <h3>💻 Comment passer une commande sur GameX Install ?</h3>
+      <p>Ajoutez vos jeux ou logiciels au panier, remplissez le formulaire de commande, et vous recevrez une confirmation via WhatsApp. Le paiement se fait après livraison.</p>
+    </div>
+
+    <div class="faq">
+      <h3>📦 Quels sont les délais de livraison ?</h3>
+      <p>La livraison est généralement effectuée sous 1 à 2h selon votre localisation.</p>
+    </div>
+
+    <div class="faq">
+      <h3>🔑 Comment recevoir mon jeu ou logiciel ?</h3>
+      <p>Vous recevrez soit un fichier d’installation, soit une clé d’activation officielle directement après confirmation.</p>
+    </div>
+
+    <div class="faq">
+      <h3>💸 Quels moyens de paiement acceptez-vous ?</h3>
+      <p>Le paiement se fait à la livraison (cash ou mobile money). Aucun frais caché.</p>
+    </div>
+
+    <div class="faq">
+      <h3>❓ Que faire si j’ai un problème d’installation ?</h3>
+      <p>Contactez notre support technique via WhatsApp ou email. Nous vous guiderons étape par étape.</p>
+    </div>
+
+    <a href="index.html" class="btn-home">⬅ Retour à l’Accueil</a>
+  </div>
+
+<footer>
+  <p>© 2025 GAMEX INSTALL - Tous droits réservés | Développé par
+    <a href="#">COURLY DEVS</a>
+  </p>
+  
+  <p>Nous suivre sur les réseaux sociaux</p>
+  <hr /><br />
+  
+  <div class="socials">
+    <a href="https://www.tiktok.com/@user3199284392790?_r=1&_t=ZM-91HwTEuw7GC"><img src="../images/tikok.png" height="40" width="40" alt="Tiktok"></a>
+    <a href="#"><img src="../images/instagram.jpeg" height="40" width="40" alt="Instagram"></a>
+    <a href="#"><img src="../images/facebook.png" height="40" width="40" alt="Facebook"></a>
+    <a href="https://chat.whatsapp.com/IAi6jELFriK0neaBFJo34z?mode=ems_copy_h_t"><img src="../images/whatsapp.png" height="40" width="40" alt="WhatsApp"></a>
+  </div>
+  
+</footer>
+
+  <script>
+    // Script pour rendre la FAQ interactive
+    const questions = document.querySelectorAll(".faq h3");
+    questions.forEach(q => {
+      q.addEventListener("click", () => {
+        const p = q.nextElementSibling;
+        p.style.display = (p.style.display === "block") ? "none" : "block";
+      });
+    });
+  </script>
+
+</body>
+</html>

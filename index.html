@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GameX Install - Accueil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#00ffff">
+</head>
+<body>
+<div id="particles-js"></div>
+<header>
+<div class="logo">
+  <a href="index.html">
+    <img src="images/logo.png" alt="GameX Install Logo">
+  </a>
+</div>
+  <div class="burger" id="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  <nav class="nav-mobile" id="nav-mobile">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">A Propos</a></li>
+      <li><a href="jeux.html">Jeux</a></li>
+      <li><a href="logiciels.html">Logiciels</a></li>
+      <li><a href="systemes.html">Systèmes</a></li>
+      <li class="submenu-mobile">
+        <a href="#" class="support-toggle">Support ▾</a>
+        <ul class="sub-menu-mobile">
+          <li><a href="aide-faq.html">Aide & FAQ</a></li>
+          <li><a href="retour.html">Politique de retour</a></li>
+          <li><a href="confidentialite.html">Confidentialité</a></li>
+          <li><a href="cgv.html">Conditions générales</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<section class="hero">
+    <h2>Tendances Gaming 🔥</h2>
+    <p>Jeux & logiciels les plus demandés du moment chez GameX Install !</p>
+    <a href="jeux.html" class="btn-glow">🎮 Découvrez les Jeux</a>
+    <a href="logiciels.html" class="btn-glow">💻 Découvrez les Logiciels</a>
+    <a href="systemes.html" class="btn-glow">💻 Découvrez les Systemes d'exploitation</a>
+  </section>
+
+  <section class="trending-section">
+    <h3>🔥 En Vedette</h3>
+    <div class="trend-items">
+      <div class="card-luminous">
+        <img src="images/jeux/watch.jpg" alt="Watch Dogs">
+        <h4>Watch Dogs - PC</h4>
+      </div>
+      <div class="card-luminous">
+        <img src="images/jeux/rims.jpg" alt="RiMS Racing">
+        <h4>RiMS Racing - PC</h4>
+      </div>
+      <div class="card-luminous">
+        <img src="images/logiciels/adobepr.jpg" alt="Adobe Premiere">
+        <h4>Adobe Premiere Pro</h4>
+      </div>
+      <div class="card-luminous">
+        <img src="images/systemes/kalilinux.jpg" alt="Kali Linux">
+        <h4>Kali Linux</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <h3>GAMEX INSTALL</h3>
+        <p>Votre boutique en ligne pour jeux, logiciels et OS à prix réduit.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="jeux.html">Jeux</a></li>
+          <li><a href="logiciels.html">Logiciels</a></li>
+          <li><a href="offres.html">Offres</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="aide-faq.html">Aide & FAQ</a></li>
+          <li><a href="retour.html">Politique de retour</a></li>
+          <li><a href="cgv.html">Conditions générales</a></li>
+          <li><a href="confodentialite.html">Confidentialité</a></li>
+        </ul>
+      </div>
+    
+      <button id="offresBtn">Offres en Promotion</button>
+        <div class="socials">
+          <a href="#jfjd"><img src="../images/tikok.png" height="40px",width="40px" alt="Tiktok"></a>
+          <a href="#"><img src="../images/instagram.jpeg" height="40px",width="40px" alt="Instagram"></a>
+          <a href="#"><img src="../images/facebook.png" height="40px",width="40px" alt="Facebook"></a>
+          <a href="https://wa.me/237680458106"><img src="../images/whatsapp.png" height="40px",width="40px" alt="whatsapp"></a>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 GAMEX INSTALL - Tous droits réservés | Développé par <a href="#">COURTLY DEVS</a></p>
+    </div>
+  </footer>
+<div id="particles-js"></div>
+
+<!-- Librairie -->
+<script src="particles.min.js"></script>
+<script src="panier.js"></script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+      .then(() => console.log('Service Worker enregistré !'))
+      .catch(err => console.log('Erreur SW:', err));
+  }
+</script>
+</body>
+</html>

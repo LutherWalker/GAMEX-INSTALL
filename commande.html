@@ -1,0 +1,143 @@
+<!-- commande.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Commande - GameX Install</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+    body {
+      background: #0e0e1a;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 80px auto;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #00ffff70;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 0 5px #00f6ff;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 5px;
+      background: #1b1b2f;
+      color: white;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    button {
+      width: 100%;
+      background: #00f6ff;
+      color: #000;
+      font-weight: bold;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    #chargement {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    #chargement span {
+      color: white;
+      font-size: 1.5rem;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    #retour {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    #retour a {
+      background: #0ff;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  
+  </style>
+</head>
+<body>
+  <div id="retour">
+    <a href="index.html">⬅ Retour à l’accueil</a>
+  </div>
+  <h1>Formulaire de commande</h1>
+
+  <div id="chargement">📦 Envoi de la commande...</div>
+
+  <form id="commandeForm">
+    <label>Nom complet</label>
+    <input type="text" name="nom" required>
+
+    <label>Numéro WhatsApp</label>
+    <input type="tel" name="whatsapp" required>
+
+    <label>Adresse de livraison</label>
+    <input type="text" name="adresse" required>
+
+    <label>Date de livraison</label>
+    <input type="date" name="date" required>
+
+    <label>Heure de livraison</label>
+    <input type="time" name="heure" required>
+
+    <label>Plateforme</label>
+    <select name="platforme" required>
+      <option value="PC">PC</option>
+      <option value="PS4">PS4</option>
+      <option value="Xbox">Xbox</option>
+    </select>
+
+    <label>Liste des jeux ou logiciels</label>
+    <textarea name="jeux" id="listeJeux" rows="4" readonly></textarea>
+
+    <label>Remarques supplémentaires</label>
+    <textarea name="remarques" placeholder="(optionnel)" rows="3"></textarea>
+
+    <button type="submit">Envoyer via WhatsApp</button>
+  </form>
+
+  <script>
+    function _0x426c(){const _0x44309b=['46069480xqSDEy','\x0aðŸŽ®\x20*Jeux/Logiciels\x20commandÃ©s:*\x0a','submit','4453224iehIpy','4756684lgikxE','value','7VLfMEJ','\x0aðŸ“\x20*Adresse:*\x20','\x0aðŸ•“\x20*Heure:*\x20','parse','2060616hsYzQb','length','\x20FCFA)','adresse','getItem','date','heure','preventDefault','\x0aðŸ’¬\x20*Remarques:*\x20','nom','\x0aðŸ“ž\x20*WhatsApp:*\x20','11SZNvry','join','4QUMnKp','href','addEventListener','style','platforme','10RiCdQG','panier','getElementById','12702132DqWSnt','1012473KiOWLI','?text=','location','map','display','237680458106','removeItem','remarques','target','flex','Aucun\x20jeu\x20ou\x20logiciel\x20dans\x20le\x20panier.','DOMContentLoaded','whatsapp','1766118nJAlBI','commandeForm'];_0x426c=function(){return _0x44309b;};return _0x426c();}const _0x23ffef=_0x5657;function _0x5657(_0x430fb4,_0x333cd2){const _0x426c55=_0x426c();return _0x5657=function(_0x565762,_0x2e13cd){_0x565762=_0x565762-0x1de;let _0x5b7ca4=_0x426c55[_0x565762];return _0x5b7ca4;},_0x5657(_0x430fb4,_0x333cd2);}(function(_0x1d24c9,_0xa2012f){const _0x1c1ccf=_0x5657,_0x7a29a8=_0x1d24c9();while(!![]){try{const _0x42dde4=-parseInt(_0x1c1ccf(0x1df))/0x1+parseInt(_0x1c1ccf(0x205))/0x2*(-parseInt(_0x1c1ccf(0x1f8))/0x3)+-parseInt(_0x1c1ccf(0x1f2))/0x4+parseInt(_0x1c1ccf(0x20a))/0x5*(parseInt(_0x1c1ccf(0x1ec))/0x6)+-parseInt(_0x1c1ccf(0x1f4))/0x7*(-parseInt(_0x1c1ccf(0x1f1))/0x8)+-parseInt(_0x1c1ccf(0x1de))/0x9+parseInt(_0x1c1ccf(0x1ee))/0xa*(parseInt(_0x1c1ccf(0x203))/0xb);if(_0x42dde4===_0xa2012f)break;else _0x7a29a8['push'](_0x7a29a8['shift']());}catch(_0x45483a){_0x7a29a8['push'](_0x7a29a8['shift']());}}}(_0x426c,0xbae83),document[_0x23ffef(0x207)](_0x23ffef(0x1ea),()=>{const _0x4e331e=_0x23ffef,_0x3f926a=JSON[_0x4e331e(0x1f7)](localStorage[_0x4e331e(0x1fc)](_0x4e331e(0x20b)))||[],_0x10f2b9=document['getElementById']('listeJeux');if(_0x3f926a[_0x4e331e(0x1f9)]>0x0){let _0x1972ff=_0x3f926a[_0x4e331e(0x1e2)](_0x48d9b7=>'-\x20'+_0x48d9b7[_0x4e331e(0x201)]+'\x20('+_0x48d9b7['prix']+_0x4e331e(0x1fa))[_0x4e331e(0x204)]('\x0a');_0x10f2b9[_0x4e331e(0x1f3)]=_0x1972ff;}else _0x10f2b9[_0x4e331e(0x1f3)]=_0x4e331e(0x1e9);document['getElementById'](_0x4e331e(0x1ed))[_0x4e331e(0x207)](_0x4e331e(0x1f0),function(_0x59bec0){const _0x38c1a0=_0x4e331e;_0x59bec0[_0x38c1a0(0x1ff)](),document[_0x38c1a0(0x20c)]('chargement')[_0x38c1a0(0x208)][_0x38c1a0(0x1e3)]=_0x38c1a0(0x1e8);const _0x3b6fde=_0x59bec0[_0x38c1a0(0x1e7)],_0x1b830c=_0x3b6fde[_0x38c1a0(0x201)][_0x38c1a0(0x1f3)],_0x31b59e=_0x3b6fde[_0x38c1a0(0x1eb)][_0x38c1a0(0x1f3)],_0x19e7ed=_0x3b6fde[_0x38c1a0(0x1fb)]['value'],_0x88ad3c=_0x3b6fde[_0x38c1a0(0x1fd)][_0x38c1a0(0x1f3)],_0x377bde=_0x3b6fde[_0x38c1a0(0x1fe)][_0x38c1a0(0x1f3)],_0x4b6481=_0x3b6fde[_0x38c1a0(0x209)]['value'],_0x2877fa=_0x3b6fde['jeux'][_0x38c1a0(0x1f3)],_0x41f5eb=_0x3b6fde[_0x38c1a0(0x1e6)][_0x38c1a0(0x1f3)],_0x433182='ðŸŽ®\x20*Nouvelle\x20commande\x20GameX\x20Install*\x0a\x0aðŸ‘¤\x20*Nom:*\x20'+_0x1b830c+_0x38c1a0(0x202)+_0x31b59e+_0x38c1a0(0x1f5)+_0x19e7ed+'\x0aðŸ“…\x20*Date:*\x20'+_0x88ad3c+_0x38c1a0(0x1f6)+_0x377bde+'\x0aðŸ–¥ï¸\x20*Plateforme:*\x20'+_0x4b6481+_0x38c1a0(0x1ef)+_0x2877fa+_0x38c1a0(0x200)+_0x41f5eb+'\x0a\x0aðŸ’°\x20*Paiement\x20:\x20aprÃ¨s\x20livraison*',_0x35bfae=_0x38c1a0(0x1e4),_0x394173='https://wa.me/'+_0x35bfae+_0x38c1a0(0x1e0)+encodeURIComponent(_0x433182);localStorage[_0x38c1a0(0x1e5)]('panier'),window[_0x38c1a0(0x1e1)][_0x38c1a0(0x206)]=_0x394173;});}));
+  </script>
+</body>
+</html>
